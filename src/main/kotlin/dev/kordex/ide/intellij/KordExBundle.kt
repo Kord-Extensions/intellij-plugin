@@ -1,13 +1,13 @@
-package com.github.gdude2002.intellijplugin
+package dev.kordex.ide.intellij
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.PropertyKey
 
 @NonNls
-private const val BUNDLE = "messages.MyBundle"
+private const val BUNDLE = "messages.KordExtensions"
 
-object MyBundle : DynamicBundle(BUNDLE) {
+object KordExBundle : DynamicBundle(BUNDLE) {
 
     @JvmStatic
     fun message(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) =
