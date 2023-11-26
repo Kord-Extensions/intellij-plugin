@@ -2,9 +2,27 @@
 <idea-plugin>
     <id>dev.kordex.ide.intellij.intellij-plugin</id>
     <name>Kord Extensions Framework Support</name>
-    <vendor>gdude2002</vendor>
+    <vendor>kord-extensions</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <resource-bundle>messages.KordExtensions</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider
+            language="JAVA"
+            implementationClass="dev.kordex.ide.intellij.markers.BundleLineMarkerProvider"
+        />
+
+        <codeInsight.lineMarkerProvider
+            language="JAVA"
+            implementationClass="dev.kordex.ide.intellij.markers.LocaleLineMarkerProvider"
+        />
+
+        <codeInsight.lineMarkerProvider
+            language="JAVA"
+            implementationClass="dev.kordex.ide.intellij.markers.StringLineMarkerProvider"
+        />
+    </extensions>
 </idea-plugin>

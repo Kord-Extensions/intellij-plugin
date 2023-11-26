@@ -1,6 +1,6 @@
 package dev.kordex.ide.intellij
 
-import java.util.logging.Logger
+import com.intellij.openapi.diagnostic.Logger
 
 @Suppress("unused")
-val logger: Logger = Logger.getLogger("KordExtensionsPlugin")
+val logger: Logger = Logger.getInstance("dev.kordex.ide.intellij.KordExtensionsPlugin")
